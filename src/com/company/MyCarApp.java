@@ -1,22 +1,31 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class MyCarApp {
 
    public static void main(String[] args) {
 	// write your code here
        Car myCar = new Car();
+       Scanner scan = new Scanner(System.in);
+
+       System.out.println("Enter Color: ");
+       String color = scan.next();
+
+       System.out.println("Enter Year");
+       String year = scan.next();
 
 
        Vehicle myVehicle = new Vehicle();
 
 
-       myCar.setColor(" Blue ");
+       myCar.setColor(color);
        System.out.println(" ");
 
        myCar.setWeight("260 tone");
        System.out.printf("");
 
-       myVehicle.setModel("Toyota SE");
+       myVehicle.setModel("Toyota Camry SE");
        System.out.printf("");
 
        myVehicle.setYear("2018");
